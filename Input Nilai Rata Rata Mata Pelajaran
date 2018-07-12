@@ -1,0 +1,215 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	int a,AVG[5],semester3,semester4,semester5;
+	float nrbindo,nrbingg,nrmtk,nrfis,nrkim,nrbio,nr; //deklarasi nr
+	float bindous[5],inggus[5],mtkus[5],fisus[5],kimus[5],bious[5],us; // deklarasi us
+	float bindoun[5],inggun[5],mtkun[5],fisun[5],kimun[5],bioun[5],un; // deklarasi un
+	float nsbindo,nsbingg,nsmtk,nsfis,nskim,nsbio,ns; //deklarasi ns
+	float nabindo,nabingg,namtk,nafis,nakim,nabio,na; //deklasi na
+	float bindo3[5],ingg3[5],mtk3[5],fis3[5],kim3[5],bio3[5];	// deklar semester 3
+	float bindo4[5],ingg4[5],mtk4[5],fis4[5],kim4[5],bio4[5]; //deklarasi semester 4
+	float bindo5[5],ingg5[5],mtk5[5],fis5[5],kim5[5],bio5[5]; // deklarasi semester 5
+
+	cout<<"Nama : Devira Asha "<<endl;
+	cout<<"NIM : 20170801129 "<<endl<<endl;
+	cout<<"Jumlah Data Mahasiswa = ";
+	cin>>a;
+	
+	for(int i=0; i<a; i++) //membatasi jumblah data dengan array ,i adalah array
+	{	cout<<endl;
+		cout<<"---------------------------------------"<<endl;
+		cout<<"Data Ke [ "<<i+1<<" ] "<<endl; // data dimulai dr satu sampai batas yang diinput pada jumblah data
+		cout<<"----------------------------------------"<<endl;
+		cout<<"=========== semester 3 =========="<<endl; 
+		cout<<"Bahasa Indonesia : "; //output bahasa indonesia
+		cin>>bindo3[i]; //input nilai indo 
+		cout<<"Bahasa Inggris : "; //output bahasa inggris
+		cin>>ingg3[i];//input nilai inggris
+		cout<<"Matematika : "; //output matematika
+		cin>>mtk3[i];//input nilai mtk
+		cout<<"Fisika : "; //output fisika
+		cin>>fis3[i]; // input
+		cout<<"Kimia : ";
+		cin>>kim3[i];
+		cout<<"Biologi : ";
+		cin>>bio3[i];
+		
+		cout<<"========== semester 4 =========="<<endl;
+		cout<<"Bahasa Indonesia : ";
+		cin>>bindo4[i];
+		cout<<"Bahasa Inggris : ";
+		cin>>ingg4[i];
+		cout<<"Matematika : ";
+		cin>>mtk4[i];
+		cout<<"Fisika : ";
+		cin>>fis4[i];
+		cout<<"Kimia : ";
+		cin>>kim4[i];
+		cout<<"Biologi : ";
+		cin>>bio4[i];		
+		
+		cout<<"========== semester 5 =========="<<endl;
+		cout<<"Bahasa Indonesia : ";
+		cin>>bindo5[i];
+		cout<<"Bahasa Inggris : ";
+		cin>>ingg5[i];
+		cout<<"Matematika : ";
+		cin>>mtk5[i];
+		cout<<"Fisika : ";
+		cin>>fis5[i];
+		cout<<"Kimia : ";
+		cin>>kim5[i];
+		cout<<"Biologi : ";
+		cin>>bio5[i];
+				
+		cout<<"------------------------------"<<endl;
+		cout<<"MASUKKAN NILAI US "<<endl;
+		cout<<"------------------------------"<<endl;
+		cout<<"Bahasa Indonesia : ";
+		cin>>bindous[i];
+		cout<<"Bahasa Inggris : ";
+		cin>>inggus[i];
+		cout<<"Matematika : ";
+		cin>>mtkus[i];
+		cout<<"Fisika : ";
+		cin>>fisus[i];
+		cout<<"Kimia : ";
+		cin>>kimus[i];
+		cout<<"Biologi : ";
+		cin>>bious[i];
+		
+		us=AVG[i]=(bindous[i]+inggus[i]+mtkus[i]+fisus[i]+kimus[i]+bious[i])/6;
+		cout<<"Rata Rata US : "<<us<<endl;
+		
+		cout<<"-------------------------------"<<endl;
+		cout<<"MASUKKAN NILAI UN "<<endl;
+		cout<<"-------------------------------"<<endl;
+		cout<<"Bahasa Indonesia : ";
+		cin>>bindoun[i];
+		cout<<"Bahasa Inggris : ";
+		cin>>inggun[i];
+		cout<<"Matematika : ";
+		cin>>mtkun[i];
+		cout<<"Fisika : ";
+		cin>>fisun[i];
+		cout<<"Kimia : ";
+		cin>>kimun[i];
+		cout<<"Biologi : ";
+		cin>>bioun[i];
+		
+		cout<<"---------------------------"<<endl;
+		cout<<"NILAI RATA RATA SEMESTER "<<endl;
+		cout<<"---------------------------"<<endl;
+		semester3=AVG[i]=(bindo3[i]+ingg3[i]+mtk3[i]+fis3[i]+kim3[i]+bio3[i])/6;
+		cout<<"Rata Rata Semester 3 : "<<semester3<<endl;
+		semester4=AVG[i]=(bindo4[i]+ingg4[i]+mtk4[i]+fis4[i]+kim4[i]+bio4[i])/6;
+		cout<<"Rata Rata Semester 4 : "<<semester4<<endl;
+		semester5=AVG[i]=(bindo5[i]+ingg5[i]+mtk5[i]+fis5[i]+kim5[i]+bio5[i])/6;
+		cout<<"Rata Rata Semester 5 : "<<semester5<<endl;		
+		cout<<"--------------------------"<<endl;
+		cout<<"\tNilai NR "<<endl;
+		cout<<"--------------------------"<<endl;
+		
+		nrbindo=AVG[i]=(bindo3[i]+bindo4[i]+bindo5[i])/3;
+		cout<<"NR B.Indonesia : "<<nrbindo<<endl;
+		nrbingg=AVG[i]=(ingg3[i]+ingg4[i]+ingg5[i])/3;
+		cout<<"NR B.Inggris : "<<nrbingg<<endl;
+		nrmtk=AVG[i]=(mtk3[i]+mtk4[i]+mtk5[i])/3;
+		cout<<"NR matematika : "<<nrmtk<<endl;
+		nrfis=AVG[i]=(fis3[i]+fis4[i]+fis5[i])/3;
+		cout<<"NR B.fisika : "<<nrfis<<endl;
+		nrkim=AVG[i]=(kim3[i]+kim4[i]+kim5[i])/3;
+		cout<<"NR Kimia : "<<nrkim<<endl;
+		nrbio=AVG[i]=(bio3[i]+bio4[i]+bio5[i])/3;
+		cout<<"NR Biologi : "<<nrbio<<endl;	
+			
+		nr=AVG[i]=(nrbindo+nrbingg+nrmtk+nrfis+nrkim+nrbio)/6;
+		cout<<"NR Rata Rata NR : "<<nr<<endl;
+		
+		cout<<"----------------------------"<<endl;
+		cout<<"\tNilai NS "<<endl;
+		cout<<"----------------------------"<<endl;
+	    nsbindo=(0.7*nrbindo)+(0.3*bindous[i]);
+		cout<<"NS B.Indonesia : "<<nsbindo<<endl;
+		nsbingg=(0.7*nrbingg)+(0.3*inggus[i]);
+		cout<<"NS B.Inggris : "<<nsbingg<<endl;
+		nsmtk=(0.7*nrmtk)+(0.3*mtkus[i]);
+		cout<<"NS Matematika : "<<nsmtk<<endl;
+		nsfis=(0.7*nrfis)+(0.3*fisus[i]);
+		cout<<"NS Fisika : "<<nsfis<<endl;
+		nskim=(0.7*nrkim)+(0.3*kimus[i]);
+		cout<<"NS Kimia : "<<nskim<<endl;
+		nsbio=(0.7*nrbio)+(0.3*bious[i]);
+		cout<<"NS Biologi : "<<nsbio;
+		cout<<"\n\n";
+		ns=AVG[i]=(nsbindo+nsbingg+nsmtk+nsfis+nskim+nsbio)/6;
+		cout<<"Nilai Rata - Rata NS : "<<ns<<endl;
+		
+		cout<<"------------------------"<<endl;
+		cout<<"NILAI AKHIR\n";
+		cout<<"------------------------"<<endl;
+		nabindo=(0.4*nsbindo)+(0.6*bindoun[i]);
+		cout<<"Nilai Akhir B.Indonesia : "<<nabindo<<endl;
+		nabingg=(0.4*nsbingg)+(0.6*inggun[i]);
+		cout<<"Nilai Akhir B.Inggris : "<<nabingg<<endl;
+		namtk=(0.4*nsmtk)+(0.6*mtkun[i]);
+		cout<<"Nilai Akhir Matematika : "<<namtk<<endl;
+		nafis=(0.4*nsfis)+(0.6*fisun[i]);
+		cout<<"Nilai Akhir Fisika : "<<nafis<<endl;
+		nakim=(0.4*nskim)+(0.6*kimun[i]);
+		cout<<"Nilai Akhir Kimia : "<<nakim<<endl;
+		nabio=(0.4*nsbio)+(0.6*bious[i]);
+		cout<<"Nilai Akhir Biologi : "<<nabio;
+		cout<<"\n\n";
+		
+		na=AVG[i]=(nabindo+nabingg+namtk+nafis+nakim+nabio)/6;
+		cout<<"Nilai Akhir Rata-Rata : "<<na<<endl;
+		cout<<"\n";
+		cout<<"--------------------------\n";
+		cout<<"KETERANGAN LULUS\n";
+		cout<<"-------------------------\n";
+		
+		if(nabindo>=4){
+		cout<<"Nilai B.Indonesia Anda Lulus"<<endl;
+		}else{
+		cout<<"Nilai B. Indonesia Anda Tidak Lulus"<<endl;
+	}
+	    if(nabingg>=4){
+		cout<<"Nilai B. Inggris Anda Lulus"<<endl;
+		}else{
+		cout<<"Nilai B. Inggris Anda Tidak Lulus"<<endl;
+	}
+	    if(namtk>=4){
+		cout<<"Nilai Matematika Anda Lulus"<<endl;
+		}else{
+		cout<<"Nilai Matematika Anda Tidak Lulus"<<endl;
+	}
+	    if(nafis>=4){
+		cout<<"Nilai Fisika Anda Lulus"<<endl;
+		}else{
+		cout<<"Nilai Fisika Anda Tidak Lulus"<<endl;
+	}
+	    if(nakim>=4){
+		cout<<"Nilai Kimia Anda Lulus"<<endl;
+		}else{
+		cout<<"Nilai Kimia Anda Tidak Lulus"<<endl;
+	}
+	    if(nabio>=4){
+		cout<<"Nilai Biologi Anda Lulus"<<endl;
+		}else{
+		cout<<"Nilai Biologi Anda Tidak Lulus"<<endl;
+	}
+	    cout<<"\n";
+	    
+	    cout<<"RATA-RATA KESELURUHAN NILAI AKHIR\n";
+	    if(na>=5.5){
+		cout<<"-Selamat Anda Lulus-"<<endl;
+		}else{
+		cout<<"-Maaf Anda Tidak Lulus-"<<endl;
+		}
+	}
+	getch();
+	}
